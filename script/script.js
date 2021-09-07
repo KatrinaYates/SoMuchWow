@@ -5,6 +5,11 @@ $(function() {
   $stop_counter = $( "#event-stop" ),
   counts = [ 0, 0, 0 ];
 
+  $("button").click(function(){
+    var x = $("#dogePic").position();
+    alert("Top: " + x.top + " Left: " + x.left);
+  });
+
 $( "#dogePic" ).draggable({
   start: function() {
     counts[ 0 ]++;
